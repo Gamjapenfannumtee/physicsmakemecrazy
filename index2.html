@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Quiz - Boss Fight</title>
+    <script src="game2.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        h1, p {
+            color: #333;
+            text-align: center;
+            z-index: 10;
+        }
+        #message {
+            text-align: center;
+            font-size: 36px;
+            color: red;
+            position: absolute;
+            z-index: 10;
+        }
+        #question {
+            font-size: 36px;
+            text-align: center;
+            color: black;
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <h1>Physics Quiz</h1>
+    <p id="question">Loading question . . .</p>
+    <div id="message"></div>
+</body>
+</html>
